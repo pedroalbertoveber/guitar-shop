@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  padding: 0 50px;
+  border-top: 1px solid #BF3E0F;
+}
+
+footer .footer-container {
+  max-width: 1000px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+footer .footer-container p strong {
+  font-weight: 600;
+  color: #BF3E0F;
+}

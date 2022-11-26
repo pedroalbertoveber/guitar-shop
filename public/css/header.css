@@ -1,0 +1,43 @@
+header {
+  border-bottom: 1px solid #BF3E0F;
+  padding: 1.5em 50px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+header .header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+header .header-container .logo-container i {
+  font-size: 30pt;
+  color: #BF3E0F;
+}
+
+header .header-container nav ul {
+  align-items: center;
+  display: flex;
+}
+
+header .header-container nav ul li {
+  margin-left: 2em;
+}
+
+header .header-container nav ul li:first-child {
+  margin: 0;
+}
+
+header .header-container nav ul li a {
+  font-weight: bold;
+  color: #BF3E0F;
+  font-size: 1.1em;
+  transition: all .2s;
+}
+
+header .header-container nav ul li a:hover {
+  color: #731702;
+}

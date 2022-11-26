@@ -1,0 +1,31 @@
+<div class="title-container">
+  <h2>Cadastrando Guitarra</h2>
+</div>
+<form action="/guitars/add" method="POST" class="form-container">
+  <div class="form-control">
+    <label for="guitar">Modelo</label>
+    <input type="text" name="guitar" placeholder="Digite o modelo da sua guitarra">
+  </div>
+  <div class="form-control">
+    <label for="brand">Marca</label>
+    <input type="text" name="brand" placeholder="Digite a marca da sua guitarra">
+  </div>
+  <div class="form-control">
+    <label for="year">Ano</label>
+    <input type="text" name="year" placeholder="Digite o ano da sua guitarra">
+  </div>
+  <div class="form-control">
+    <label for="image">Imagem</label>
+    <input type="text" name="image" placeholder="Digite a URL da imagem da sua guitarra">
+  </div>
+  <div class="form-control">
+    <label for="price">Preço</label>
+    <input type="text" name="price" placeholder="Digite o preço da sua guitarra">
+  </div>
+  <div class="form-control">
+    <label for="description">Descrição</label>
+    <textarea name="description" placeholder="Descreva sua guitarra"></textarea>
+  </div>
+  <input type="submit" value="Cadastrar" class="submit-button">
+  <a href="/" class="go-back">Voltar</a>
+</form>

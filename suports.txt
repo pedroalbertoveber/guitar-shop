@@ -1,0 +1,5 @@
+-- yellow: #F2AB27
+-- orange: #F27B13
+-- red: #BF3E0F
+-- dark-red: #731702
+-- black: #0D0D0D

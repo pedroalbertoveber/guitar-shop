@@ -1,0 +1,32 @@
+<div class="title-container">
+  <h2>Editando Guitarra: {{guitar.guitar}}</h2>
+</div>
+<form action="/guitars/edit" method="POST" class="form-container">
+  <div class="form-control">
+    <label for="guitar">Modelo</label>
+    <input type="text" name="guitar" placeholder="Digite o modelo da sua guitarra" value="{{guitar.guitar}}">
+  </div>
+  <div class="form-control">
+    <label for="brand">Marca</label>
+    <input type="text" name="brand" placeholder="Digite a marca da sua guitarra" value="{{guitar.brand}}">
+  </div>
+  <div class="form-control">
+    <label for="year">Ano</label>
+    <input type="text" name="year" placeholder="Digite o ano da sua guitarra" value="{{guitar.year}}">
+  </div>
+  <div class="form-control">
+    <label for="image">Imagem</label>
+    <input type="text" name="image" placeholder="Digite a URL da imagem da sua guitarra" value="{{guitar.image}}">
+  </div>
+  <div class="form-control">
+    <label for="price">Preço</label>
+    <input type="text" name="price" placeholder="Digite o preço da sua guitarra" value="{{guitar.price}}">
+  </div>
+  <div class="form-control">
+    <label for="description">Descrição</label>
+    <textarea name="description" placeholder="Descreva sua guitarra">{{guitar.description}}</textarea>
+  </div>
+  <input type="submit" value="Editar" class="submit-button">
+  <input type="hidden" value="{{guitar._id}}" name="id">
+</form>
+<a href="/" class="go-back">Voltar</a>

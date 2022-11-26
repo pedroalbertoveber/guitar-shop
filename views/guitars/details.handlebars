@@ -1,0 +1,20 @@
+<div class="title-container">
+  <h2>{{guitar.guitar}}</h2>
+</div>
+<section class="guitar-thumbnail">
+  <img src="{{guitar.image}}" alt="{{guitar.guitar}}">
+  <figcaption>
+    <p class="info">Marca: <strong>{{guitar.brand}}</strong></p>
+    <p class="info">Ano: <strong>{{guitar.year}}</strong></p>
+    <p class="info">Preço: <strong>R$ {{guitar.price}},00</strong></p>
+    <div class="description">
+      {{guitar.description}}
+    </div>
+    <a href="/">Voltar para todas as guitarras</a>
+    <a href="/guitars/edit/{{guitar._id}}">Editar guitarra</a>
+    <form action="/guitars/delete" method="post">
+      <input type="hidden" name="id" value="{{guitar._id}}">
+      <input type="submit" value="Deleter guitarra">
+    </form>
+  </figcaption>
+</section>

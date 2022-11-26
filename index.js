@@ -1,6 +1,7 @@
 /* external modules */
 const express = require("express");
 const exphbs = require("express-handlebars");
+const GuitarController = require("./controllers/GuitarController");
 
 const app = express();
 const conn = require("./db/conn").run;
@@ -22,5 +23,6 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 
-app.use("/", guitarRoutes);
+app.use("/guitars", guitarRoutes);
+app.get("/", GuitarController.getAll);
 app.listen(3000);

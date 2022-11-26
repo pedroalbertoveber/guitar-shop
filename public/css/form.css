@@ -1,0 +1,49 @@
+.title-container {
+  width: 100%;
+  margin-bottom: 2em;
+} 
+
+.title-container h2 {
+  font-size: 1.8em;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .form-control {
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .form-control label {
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+.form-container .form-control input,
+.form-container textarea {
+  border: 0;
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 4px;
+  color: #0d0d0d;
+}
+
+.form-container .submit-button {
+  padding: 10px;
+  border: none;
+  background-color: #BF3E0F;
+  color: #fafafa;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 2em;
+}
+
+.form-container .submit-button:active {
+  background-color: #731702;
+}

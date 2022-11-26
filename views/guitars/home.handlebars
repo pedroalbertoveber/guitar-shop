@@ -1,1 +1,15 @@
-<h1>Olá, mundo!</h1>
+<div class="title-container">
+  <h2>Todas as Guitarras</h2>
+</div>
+<div class="guitars-container">
+  {{#each guitars}}
+  <div class="guitar-container">
+      <img src="{{this.image}}" alt="{{this.guitar}}">
+    <div class="guitar-info">
+      <strong>R$ {{this.price}},00</strong>
+      <h4>{{this.guitar}}</h4>
+    </div>
+    <a href="/guitars/{{this._id}}">Ver detalhes</a>
+  </div>
+  {{/each}}
+</div>

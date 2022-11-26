@@ -5,9 +5,10 @@ const { Schema } = mongoose;
 const Guitar = mongoose.model(
   "Guitar",
   new Schema ({
-    name: { type: String, required: true },
+    guitar: { type: String, required: true },
     brand: { type: String, required: true },
     year: { type: Number, required: true },
+    image: { type: String, required: true },
     price: { type: Number, required: true },
     description: { type: String, required: true },
   }),
